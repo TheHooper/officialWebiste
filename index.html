@@ -1,12 +1,13 @@
  <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CWIN CAPITAL 创赢资本</title>
-  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
-  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+  <meta id="i18n_pagename" content="index">
+  <meta name="description" content="CWIN CAPITAL">
+  <meta name="keywords" content="CWIN CAPITAL,创赢资本,区块链,比特币、以太坊、投资、基金、ICO,Bitcoin,ETH,Ether,Ethereum">
 
   <link rel="stylesheet" type="text/css" href="https://fonts.css.network/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
   <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
@@ -46,11 +47,17 @@
               </div>
               <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="#main-header">首页</a></li>
-                  <li class=""><a href="#service">服务</a></li>
-                  <li class=""><a href="#portfolio">投资记录</a></li>
-                  <li class=""><a href="#contact">联系我们</a></li>
-                  <!--<li class=""><a href="javascript:void(0)">|</a> </li>-->
+                  <li class="active"><a class="i18n" name="menu-home" href="#main-header">首页</a></li>
+                  <li><a class="i18n" name="menu-service" href="#service">服务</a></li>
+                  <li><a  class="i18n" name="menu-invest" href="#portfolio">投资记录</a></li>
+                  <li><a class="i18n" name="menu-contact" href="#contact">联系我们</a></li>
+                  <li>
+                    <label class="custom-select"/>
+                    <select id="language">
+                      <option value="zh-CN">中文</option>
+                      <option value="en">English</option>
+                    </select>
+                  </li>
                   <!--<li class=""><a href="#contact">中文</a></li>-->
                   <!--<li class=""><a href="#contact">English</a></li>-->
                 </ul>
@@ -64,9 +71,9 @@
               <div class="banner-info text-center wow fadeIn delay-05s">
                 <h1 class="bnr-title"><span>CWIN</span> CAPITAL</h1>
                 <h2 class="bnr-sub-title logo-dec">- 创赢资本 -</h2>
-                <p class="bnr-para">这里商业嗅觉极其灵敏. <br>这里有不耐寂寞的资金.<br>这里是<span>创赢资本</span>.</p>
+                <p class="bnr-para i18n" name="cwin-intro"></p>
                 <div class="brn-btn">
-                  <a href="#contact" class="btn btn-download">联系我们</a>
+                  <a href="#contact" class="btn btn-download i18n" name="menu-contact"></a>
                   <!--<a href="#" class="btn btn-more">Learn More</a>-->
                 </div>
                 <div class="overlay-detail">
@@ -88,8 +95,8 @@
               <div class="item-img">
                 <img src="img/ser01.png">
               </div>
-              <h3 class="pad-bt15">项目接洽</h3>
-              <p>我们不是在寻找优质项目，就是在寻找优质项目的路上，资金不甘沉寂，但也只有缘于可靠的项目。</p>
+              <h3 class="pad-bt15 i18n" name="resource-project-title"></h3>
+              <p class="i18n" name="resource-project"></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -97,10 +104,8 @@
               <div class="item-img">
                 <img src="img/ser02.png">
               </div>
-              <h3 class="pad-bt15">投资分析</h3>
-              <p>从多维度对项目进行分析,商用前景，Token经济模型，技术架构，团队成员，入驻机构，媒体热度等方面，
-              判断项目的投资价值。
-              </p>
+              <h3 class="pad-bt15 i18n" name="resource-analysis-title"></h3>
+              <p class="i18n" name="resource-analysis"></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -108,8 +113,8 @@
               <div class="item-img">
                 <img src="img/socialMedia.png">
               </div>
-              <h3 class="pad-bt15">社群资源</h3>
-              <p>依托良好的信誉，我们积累了丰富的社群资源。</p>
+              <h3 class="pad-bt15 i18n" name="resource-community-title"></h3>
+              <p class="i18n" name="resource-community"></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
@@ -117,8 +122,8 @@
               <div class="item-img">
                 <img src="img/ser03.png">
               </div>
-              <h3 class="pad-bt15">资本</h3>
-              <p>足量的资本，不仅能支撑更多的项目，还能提供更好的扛压、扛风险能力。</p>
+              <h3 class="pad-bt15 i18n" name="resource-funds-title"></h3>
+              <p class="i18n" name="resource-funds"></p>
             </div>
           </div>
         </div>
@@ -130,34 +135,32 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">服务</h2>
-            <p class="sub-title pad-bt15">我们做些什么.</p>
+            <h2 class="service-title pad-bt15 i18n" name="service-title"></h2>
+            <p class="sub-title pad-bt15 i18n" name="service-intro"></p>
             <hr class="bottom-line">
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
-              <h3><span>初</span>始令牌融资</h3>
-              <p>帮助区块链公司进行融资(初始令牌发现),并在多个区块链项目中取得了成功，且获得了极高的收益回报。</p>
+              <h3 class="i18n" name="service-ico-title"></h3>
+              <p class="i18n" name="service-ico"></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
-              <h3><span>投</span>资及孵化</h3>
-              <p>自步入行业以来，我们一直寻找加密货币相关的项目及业务，并有专项资金提供支持。</p>
+              <h3 class="i18n" name="service-invest-title"></h3>
+              <p class="i18n" name="service-invest"></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
-              <h3><span>基</span>金</h3>
-              <p>如项目数量呈指数级爆发，无论是一级市场还是二级市场，对于个人投资者来说，
-              需要收集的情报及信息都是太过庞大，且不易收集的，参与基金是另一种值得考虑的投资方式。</p>
+              <h3 class="i18n" name="service-funds-title"></h3>
+              <p class="i18n" name="service-funds"></p>
             </div>
           </div>
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="service-item">
-              <h3><span>推</span>广</h3>
-              <p>比特币依托共识，不需要任何机构、国家背书，依然有着不凡的价值，去中心化资产的核心在于共识，
-              则社区是极重要的一环，优质的社群是项目价值的守卫者。</p>
+              <h3 class="i18n" name="service-spread-title"></h3>
+              <p class="i18n" name="service-spread"></p>
             </div>
           </div>
         </div>
@@ -171,8 +174,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">投资回顾</h2>
-            <p class="sub-title pad-bt15">CWIN CAPITAL在不同层度上参与了以下项目：<br></p>
+            <h2 class="service-title pad-bt15 i18n" name="invest-title">投资回顾</h2>
+            <p class="sub-title pad-bt15 i18n" name="invest-intro">CWIN CAPITAL在不同层度上参与了以下项目：<br></p>
             <hr class="bottom-line">
           </div>
           <div class="col-md-2 col-sm-4 col-xs-6 portfolio-item padding-right-zero mr-btn-15">
@@ -319,8 +322,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center white">
-            <h2 class="service-title pad-bt15">联系我们</h2>
-            <p class="sub-title pad-bt15">简单团队介绍，合作业务，项目规划.</p>
+            <h2 class="service-title pad-bt15 i18n" name="contact-title">联系我们</h2>
+            <p class="sub-title pad-bt15 i18n" name="contact-intro">简单团队介绍，合作业务，项目规划.</p>
             <hr class="bottom-line white-bg">
           </div>
           <div class="col-md-12 col-sm-12 col-xs-12">
@@ -351,6 +354,7 @@
   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/video.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/jquery.i18n.properties.min.js"></script>
+  <script src="js/jquery.i18n.properties.js"></script>
+  <script src="js/language.js"></script>
 </body>
 </html>

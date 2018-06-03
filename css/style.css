@@ -184,7 +184,10 @@ HEADER
   padding: 15px 0px;
   margin-top: 6px;
 }
-
+.navbar-nav{
+  display: flex;
+  align-items: center;
+}
 .navbar-default .navbar-nav>li>a {
   padding: 5px 10px;
   font-size: 14px;
@@ -234,6 +237,7 @@ h2.bnr-sub-title {
   line-height: 1.8em;
   font-weight: 300;
 }
+
 
 .btn-download, .btn-more, .btn-download:hover, .btn-download:focus, .btn-more:focus {
   text-transform: uppercase;
@@ -880,7 +884,9 @@ Responsive media queries
   }
 }
 
-/*** video bg **/
+/*** ********
+********* video bg ********
+ **/
 .indexDesc{
   position: absolute;
   width: 100%;
@@ -941,4 +947,57 @@ Responsive media queries
 -webkit-background-size: cover; //webkit核心
 -moz-background-size: cover; //FF核心
 -o-background-size: cover; //应该是Opera核心吧，反正不是IE的，就先不管它了
+}
+/******** custom dropdown *****/
+.padding-left-sm{
+  padding-left: 0.5em;
+}
+.custom-select {
+  display: inline-block;
+  position: relative;
+}
+.custom-select select {
+  width: auto;
+  margin: 0;
+  padding: .75em .75em;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  /* Styling the select text color */
+  color: rgba(255, 255, 255, 0.6);
+  /* removes the fucking native down arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+.custom-select select::-ms-expand {
+  display: none;
+}
+.custom-select:after {
+  position: absolute;
+  top: 1.25em;
+  right: 1em;
+  /* Styling the down arrow */
+  width: 0;
+  height: 0;
+  padding: 0;
+  content: '';
+  border-left: .25em solid transparent;
+  border-right: .25em solid transparent;
+  border-top: .375em solid #be9e21;
+  pointer-events: none;
+}
+
+@-moz-document url-prefix() {
+  .custom-select select {
+    padding-right: 1.75em;
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .custom-select select {
+    padding-right: 2em;
+  }
 }
